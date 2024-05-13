@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Page name="Главное" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главное</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="ГлавноеРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПредупреждение" id="96">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предупреждение</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="97"/>
+							<ChildItems>
+								<PictureDecoration name="ПредупреждениеКартинка" id="98">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предупреждение картинка</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ПредупреждениеКартинкаКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ПредупреждениеКартинкаРасширеннаяПодсказка" id="100"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПредупреждениеНадпись" id="101">
+									<Width>50</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Указан параметр запуска %1</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПредупреждениеНадписьКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ПредупреждениеНадписьРасширеннаяПодсказка" id="103"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="КомандыФормы" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды формы</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSource>Form</CommandSource>
+							<ExtendedTooltip name="КомандыФормыРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<Button name="ВыполнитьДействие" id="4">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ВыполнитьДействие</CommandName>
+									<ExtendedTooltip name="ВыполнитьДействиеРасширеннаяПодсказка" id="5"/>
+								</Button>
+								<Button name="ФормаРассчитатьЗначение" id="36">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьЗначение</CommandName>
+									<ExtendedTooltip name="ФормаРассчитатьЗначениеРасширеннаяПодсказка" id="37"/>
+								</Button>
+								<Button name="ФормаОбработкаЖурналРегистрацииОткрыть" id="12">
+									<Type>CommandBarButton</Type>
+									<CommandName>DataProcessor.ЖурналРегистрации.StandardCommand.Open</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перейти в журнал регистрации</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ФормаОбработкаЖурналРегистрацииОткрытьРасширеннаяПодсказка" id="13"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="НастройкиВыполнения" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки выполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ChildrenAlign>TitlesLeftDataAuto</ChildrenAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="НастройкиВыполненияРасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<UsualGroup name="ОсновныеНастройки" id="68">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные настройки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ОсновныеНастройкиРасширеннаяПодсказка" id="69"/>
+									<ChildItems>
+										<RadioButtonField name="ОжидаемыйРезультат" id="6">
+											<DataPath>ОжидаемыйРезультат</DataPath>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ItemWidth>11</ItemWidth>
+											<ColumnsCount>2</ColumnsCount>
+											<EqualColumnsWidth>true</EqualColumnsWidth>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Успешно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Успешно</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Исключение</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Ошибка</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ОжидаемыйРезультатКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="ОжидаемыйРезультатРасширеннаяПодсказка" id="8"/>
+										</RadioButtonField>
+										<RadioButtonField name="СкоростьВыполнения" id="1">
+											<DataPath>СкоростьВыполнения</DataPath>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ItemWidth>11</ItemWidth>
+											<ColumnsCount>2</ColumnsCount>
+											<EqualColumnsWidth>true</EqualColumnsWidth>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Моментально</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>С задержкой</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">10</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СкоростьВыполненияКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="СкоростьВыполненияРасширеннаяПодсказка" id="3"/>
+										</RadioButtonField>
+										<RadioButtonField name="ФормаОжидания" id="19">
+											<DataPath>ФормаОжидания</DataPath>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ItemWidth>11</ItemWidth>
+											<ColumnsCount>2</ColumnsCount>
+											<EqualColumnsWidth>true</EqualColumnsWidth>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Показывать</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Не показывать</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">НеПоказывать</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ФормаОжиданияКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ФормаОжиданияРасширеннаяПодсказка" id="21"/>
+											<Events>
+												<Event name="OnChange">ФормаОжиданияПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+										<InputField name="РежимОткрытияОкнаОжидания" id="122">
+											<DataPath>РежимОткрытияОкнаОжидания</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По умолчанию (Блокировать окно владельца)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string"/>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Независимый</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Независимый</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Блокировать окно владельца</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">БлокироватьОкноВладельца</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Блокировать весь интерфейс</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">БлокироватьВесьИнтерфейс</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="РежимОткрытияОкнаОжиданияКонтекстноеМеню" id="123"/>
+											<ExtendedTooltip name="РежимОткрытияОкнаОжиданияРасширеннаяПодсказка" id="124"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметры" id="17">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="18"/>
+									<ChildItems>
+										<CheckBoxField name="ПрогрессВыполнения" id="14">
+											<DataPath>ПрогрессВыполнения</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обрабатывать прогресс выполнения и порции сообщений в текущей форме (не вызывается, когда выбрано показывать форму ожидания)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПрогрессВыполненияКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ПрогрессВыполненияРасширеннаяПодсказка" id="16"/>
+										</CheckBoxField>
+										<CheckBoxField name="ВыводитьСообщения" id="22">
+											<DataPath>ВыводитьСообщения</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В форме ожидания выводить в форму владельца (эту форму) порции сообщений при обработке прогресса</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВыводитьСообщенияКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ВыводитьСообщенияРасширеннаяПодсказка" id="24"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗапуститьВФоне" id="38">
+											<DataPath>ЗапуститьВФоне</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запускать в фоне даже тогда, когда фоновое задание уже выполняется (при этом не ждать завершения и гарантированно подключать обработчик ожидания завершения длительной операции)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗапуститьВФонеКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ЗапуститьВФонеРасширеннаяПодсказка" id="40"/>
+										</CheckBoxField>
+										<CheckBoxField name="СообщенияЧерезСообщить" id="70">
+											<DataPath>СообщенияЧерезСообщить</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СообщенияЧерезСообщитьКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="СообщенияЧерезСообщитьРасширеннаяПодсказка" id="72"/>
+										</CheckBoxField>
+										<CheckBoxField name="ОжидатьЗавершенияНаСервере" id="116">
+											<DataPath>ОжидатьЗавершенияНаСервере</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОжидатьЗавершенияНаСервереКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ОжидатьЗавершенияНаСервереРасширеннаяПодсказка" id="118"/>
+										</CheckBoxField>
+										<CheckBoxField name="ОтменятьПриЗакрытииФормыВладельца" id="119">
+											<DataPath>ОтменятьПриЗакрытииФормыВладельца</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОтменятьПриЗакрытииФормыВладельцаКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="ОтменятьПриЗакрытииФормыВладельцаРасширеннаяПодсказка" id="121"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГоризонтальнаяГруппа2" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Горизонтальная группа</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГоризонтальнаяГруппа2РасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<Pages name="СтраницыОперации" id="25">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы операции</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыОперацииРасширеннаяПодсказка" id="26"/>
+									<ChildItems>
+										<Page name="СтраницаУведомление" id="27">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница уведомление</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаУведомлениеРасширеннаяПодсказка" id="28"/>
+											<ChildItems>
+												<InputField name="Уведомление" id="9">
+													<DataPath>Уведомление</DataPath>
+													<VerticalStretch>false</VerticalStretch>
+													<MultiLine>true</MultiLine>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Например: Выполняется длительная операция</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="УведомлениеКонтекстноеМеню" id="10"/>
+													<ExtendedTooltip name="УведомлениеРасширеннаяПодсказка" id="11"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаДлительнаяОперация" id="29">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница длительная операция</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаДлительнаяОперацияРасширеннаяПодсказка" id="30"/>
+											<ChildItems>
+												<PictureDecoration name="ДлительнаяОперация" id="31">
+													<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДлительнаяОперацияКонтекстноеМеню" id="32"/>
+													<ExtendedTooltip name="ДлительнаяОперацияРасширеннаяПодсказка" id="33">
+														<Height>3</Height>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Пожалуйста, подождите...</v8:content>
+															</v8:item>
+														</Title>
+														<VerticalAlign>Center</VerticalAlign>
+													</ExtendedTooltip>
+												</PictureDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<UsualGroup name="ВертикальнаяГруппа2" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вертикальная группа</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ВертикальнаяГруппа2РасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<InputField name="КоличествоШаговПрогресса" id="90">
+											<DataPath>КоличествоШаговПрогресса</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество шагов прогресса выполнения операции</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="КоличествоШаговПрогрессаКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="КоличествоШаговПрогрессаРасширеннаяПодсказка" id="92"/>
+										</InputField>
+										<InputField name="РазмерШаговПрогресса" id="93">
+											<DataPath>РазмерШаговПрогресса</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Общее время на все шаги - 15 сек, стандартный размер шага - 1 сек. Для неуказанных шагов остаток времени делится поровну</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>1 1 4 0.5 0.5 0.5 0.5 0.5 0.5 1</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="РазмерШаговПрогрессаКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="РазмерШаговПрогрессаРасширеннаяПодсказка" id="95"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<TextDocumentField name="СообщенияПользователю" id="83">
+							<DataPath>СообщенияПользователю</DataPath>
+							<Height>3</Height>
+							<ContextMenu name="СообщенияПользователюКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="СообщенияПользователюРасширеннаяПодсказка" id="85"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="Дополнительно" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<UsualGroup name="ПроверкаОсвобожденияСсылкиНаФормуПослеЗакрытия" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка освобождения ссылки на форму после закрытия</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ПроверкаОсвобожденияСсылкиНаФормуПослеЗакрытияРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="СекундПередЗакрытием" id="47">
+									<DataPath>СекундПередЗакрытием</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество секунд перед закрытием формы после запуска длительной операции.
+А также время самой длительной операции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="СекундПередЗакрытиемКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СекундПередЗакрытиемРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="СекундПослеЗакрытия" id="55">
+									<DataPath>СекундПослеЗакрытия</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество секунд после закрытия формы перед вызовом Оповестить для проверки освобождения ссылки на форму</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="СекундПослеЗакрытияКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СекундПослеЗакрытияРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<Button name="ПроверитьОсвобождениеСсылкиНаФормуПослеЗакрытия" id="58">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьОсвобождениеСсылкиНаФормуПослеЗакрытия</CommandName>
+									<ExtendedTooltip name="ПроверитьОсвобождениеСсылкиНаФормуПослеЗакрытияРасширеннаяПодсказка" id="59"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ПроверкаВыполненияДлительнойОперацииПослеЗакрытияФормыВладельца" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка выполнения длительной операции после закрытия формы владельца</v8:content>
+								</v8:item>
+							</Title>
+							<Width>60</Width>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ПроверкаВыполненияДлительнойОперацииПослеЗакрытияФормыВладельцаРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<CheckBoxField name="ОткрыватьФормуВладельцаМодально" id="113">
+									<DataPath>ОткрыватьФормуВладельцаМодально</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОткрыватьФормуВладельцаМодальноКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ОткрыватьФормуВладельцаМодальноРасширеннаяПодсказка" id="115"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельца" id="104">
+									<DataPath>ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельца</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельцаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельцаРасширеннаяПодсказка" id="106"/>
+									<Events>
+										<Event name="OnChange">ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельцаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="СекундВыполненияЗадания" id="107">
+									<DataPath>СекундВыполненияЗадания</DataPath>
+									<Enabled>false</Enabled>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<MinValue xsi:type="xs:decimal">0</MinValue>
+									<MaxValue xsi:type="xs:decimal">15</MaxValue>
+									<ContextMenu name="СекундВыполненияЗаданияКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="СекундВыполненияЗаданияРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<CheckBoxField name="ИспользоватьНеопределеноВместоСсылкиНаФормуВладельца" id="110">
+									<DataPath>ИспользоватьНеопределеноВместоСсылкиНаФормуВладельца</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьНеопределеноВместоСсылкиНаФормуВладельцаКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ИспользоватьНеопределеноВместоСсылкиНаФормуВладельцаРасширеннаяПодсказка" id="112"/>
+								</CheckBoxField>
+								<InputField name="СекундПередЗакрытиемФормыВладельца" id="75">
+									<DataPath>СекундПередЗакрытиемФормыВладельца</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="СекундПередЗакрытиемФормыВладельцаКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="СекундПередЗакрытиемФормыВладельцаРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<CheckBoxField name="ПоказатьОповещениеДляФормыВладельца" id="80">
+									<DataPath>ПоказатьОповещениеДляФормыВладельца</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказатьОповещениеДляФормыВладельцаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ПоказатьОповещениеДляФормыВладельцаРасширеннаяПодсказка" id="82"/>
+								</CheckBoxField>
+								<Button name="ПроверитьВыполнениеДлительнойОперацииПослеЗакрытияФормыВладельца" id="78">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьВыполнениеДлительнойОперацииПослеЗакрытияФормыВладельца</CommandName>
+									<ExtendedTooltip name="ПроверитьВыполнениеДлительнойОперацииПослеЗакрытияФормыВладельцаРасширеннаяПодсказка" id="79"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject._ДемоДлительнаяОперация</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СкоростьВыполнения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скорость выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>СкоростьВыполнения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОжидаемыйРезультат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидаемый результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОжидаемыйРезультат</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Уведомление" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Уведомление</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПрогрессВыполнения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПрогрессВыполнения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФормаОжидания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Окно ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ФормаОжидания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВыводитьСообщения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыводитьСообщения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗапуститьВФоне" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить действие в фоне</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗапуститьВФоне</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СекундПередЗакрытием" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунд перед закрытием</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СекундПослеЗакрытия" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунд после закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОповещениеОбработаноВЗакрытойФорме" id="11">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СообщенияЧерезСообщить" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщения через Сообщить()</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СекундПередЗакрытиемФормыВладельца" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунд перед закрытием формы владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьОповещениеДляФормыВладельца" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать оповещение для формы владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СообщенияПользователю" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщения пользователю</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоШаговПрогресса" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество шагов прогресса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазмерШаговПрогресса" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер шагов прогресса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОжидатьЗавершенияЗаданияПередОткрытиемФормыВладельца" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидать завершения задания перед открытием формы владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СекундВыполненияЗадания" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунд выполнения задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьНеопределеноВместоСсылкиНаФормуВладельца" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать "Неопределено" вместо ссылки на форму владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрыватьФормуВладельцаМодально" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открывать форму владельца модально</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОжидатьЗавершенияНаСервере" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидать завершения на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтменятьПриЗакрытииФормыВладельца" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменять при закрытии формы владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимОткрытияОкнаОжидания" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим открытия
+окна ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьДействие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить действие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить действие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьДействие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РассчитатьЗначение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать значение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать значение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьЗначение</Action>
+		</Command>
+		<Command name="ПроверитьОсвобождениеСсылкиНаФормуПослеЗакрытия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить освобождение формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить освобождение ссылки на форму после закрытия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьОсвобождениеСсылкиНаФормуПослеЗакрытия</Action>
+		</Command>
+		<Command name="ПроверитьВыполнениеДлительнойОперацииПослеЗакрытияФормыВладельца" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить выполнение</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьВыполнениеДлительнойОперацииПослеЗакрытияФормыВладельца</Action>
+		</Command>
+	</Commands>
+</Form>
